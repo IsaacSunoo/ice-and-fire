@@ -3,7 +3,12 @@ export const setHouses = houses => ({
     houses
 });
 
-export const isLoading = loading => ({
+export const setLoading = loading => ({
     type: 'SET_LOADING',
     loading
+});
+
+export const setError = message => ({
+    type: 'SET_ERROR',
+    message
 });
