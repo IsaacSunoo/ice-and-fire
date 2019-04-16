@@ -10,7 +10,7 @@ class Houses extends Component {
     }
 
     render() {
-        const { houses } = this.props;
+        const { houses, isLoading } = this.props;
         let displayHouses;
         if (houses.length !== 0) {
             console.log(houses);

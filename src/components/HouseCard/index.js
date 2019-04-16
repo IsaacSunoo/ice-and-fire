@@ -6,12 +6,12 @@ const HouseCard = ({ name, founded, seats, titles, coatOfArms, ancestralWeapons,
   return (
     <div className='house-card'>
         <h3>{name}</h3>
-        <h5>{founded}</h5>
-        <p>{seats}</p>
-        <p>{titles}</p>
-        <p>{ancestralWeapons}</p>
-        <p>{coatOfArms}</p>
-        <p>{words}</p>
+        <p>Founded: {founded}</p>
+        <p>Seats: {seats}</p>
+        <p>Titles: {titles}</p>
+        <p>Ancestral Weapons: {ancestralWeapons}</p>
+        <p>Coat of Arms: {coatOfArms}</p>
+        <p>Words: {words}</p>
     </div>
   )
 }
