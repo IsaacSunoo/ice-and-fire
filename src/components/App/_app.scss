@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #555;
+  text-shadow: 0px 0px 21px #999;
+}
+
+
 .App {
   text-align: center;
   font-family: Androgyne;
@@ -25,10 +33,6 @@
 @keyframes snow {
   0% { background-position: 0px 0px, 0px 0px, 0px 0px; }
   100% { background-position: 500px 500px, 100px 200px, -100px 150px; }
-}
-
-@keyframes App-logo-spin {
-  transform: scale(1.5,1.5);
 }
 
 #wolf {

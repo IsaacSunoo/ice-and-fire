@@ -8,7 +8,6 @@ export const getHouses = () => {
                 throw Error(response.statusText);
             }
             const houseData = await response.json();
-            console.log(houseData)
             dispatch(actions.setLoading(true));
             dispatch(actions.setHouses(houseData));
             dispatch(actions.setLoading(false));
