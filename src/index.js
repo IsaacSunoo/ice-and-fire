@@ -2,9 +2,9 @@ import './index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App/App.js';
-import { rootReducer } from './reducers'
-import { Provider } from 'react-redux'
-import { createStore, applyMiddleware } from 'redux'
+import { rootReducer } from './reducers';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 // import registerServiceWorker from './registerServiceWorker';
