@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-// import './App.css';
 import Houses from '../../containers/Houses';
 
 class App extends Component {

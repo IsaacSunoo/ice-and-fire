@@ -14,7 +14,6 @@ class Houses extends Component {
         const { houses, isLoading } = this.props;
         let displayHouses;
         if (houses.length !== 0) {
-            console.log(houses);
             displayHouses = houses.map(house => (<HouseCard {...house} key={house.name} />))
         }
 
