@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getHouses } from '../../thunks';
 import HouseCard from '../../components/HouseCard';
+import wolfGif from '../../assets/wolf.gif';
 
 class Houses extends Component {
     componentDidMount = async () => {
@@ -16,10 +17,9 @@ class Houses extends Component {
             console.log(houses);
             displayHouses = houses.map(house => (<HouseCard {...house} key={house.name} />))
         }
+
     return (
-      <div className='houses-container'>
-          {displayHouses}
-      </div>
+        isLoading ? (<div><img src={wolfGif} alt='loading wolf' /></div>) : (<div className='houses-container'>{displayHouses}</div>)
     )
   }
 }

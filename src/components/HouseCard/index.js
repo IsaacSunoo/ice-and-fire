@@ -2,6 +2,9 @@ import React from 'react';
 
 const HouseCard = ({ name, founded, seats, titles, coatOfArms, ancestralWeapons, words }) => {
     console.log(founded)
+    if (!founded) {
+        founded='n/a'
+    }
 
   return (
     <div className='house-card'>
