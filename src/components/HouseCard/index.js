@@ -3,7 +3,7 @@ import React from 'react';
 const HouseCard = ({ name, founded, seats, titles, coatOfArms, ancestralWeapons, words }) => {
     console.log(founded)
     if (!founded) {
-        founded='n/a'
+        founded='N/A'
     }
 
   return (

@@ -23,7 +23,6 @@ describe('houses', () => {
         it.skip('calls dispatch with a getHouses action', () => {
             const mockDispatch = jest.fn();
             const actionToDispatch = getHouses();
-
             const mappedProps = mapDispatchToProps(mockDispatch);
             mappedProps.getHouses();
             expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
